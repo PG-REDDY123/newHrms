@@ -1,0 +1,8 @@
+<div class="stepper-container">
+  <div class="step" *ngFor="let i of List" [routerLinkActive]="['active-step']" [routerLinkActiveOptions]="{exact: true}" >
+    <a [routerLink]="[i.link]" routerLinkActive="active-step">{{i.Link_name}}</a>
+  </div>
+</div>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
