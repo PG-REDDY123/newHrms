@@ -11,6 +11,9 @@ import { DocumentComponent } from './myprofile/document/document.component';
 import { BankComponent } from './myprofile/bank/bank.component';
 import { AccessoriesComponent } from './myprofile/accessories/accessories.component';
 import { MyProfileRoutingModule } from './myprofile/my-profile-routing.module';
+import { InputComponent } from './Components/input/input.component';
+import { ButtonComponent } from './Components/button/button.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MyProfileRoutingModule } from './myprofile/my-profile-routing.module';
     ProfileComponent,
     DocumentComponent,
     BankComponent,
-    AccessoriesComponent
+    AccessoriesComponent,
+    InputComponent,
+    ButtonComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

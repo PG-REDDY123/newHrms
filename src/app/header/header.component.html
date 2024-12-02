@@ -1,0 +1,41 @@
+<div class="cointainer">
+  <div class="header">
+    <nav>
+      <div class="nav-left">
+        <div class="search-bar">
+          <input text="text" placeholder="Search..." />
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="language-selector" (click)="showlanguage()">
+          <span class="global-icon"> <i class="fas fa-globe"></i></span>
+          <ul class="language-dropdown" *ngFor="let lang of language" style="display:none;">
+            <!--<li data-lang=></li>-->
+            <hr />
+          </ul>
+        </div>
+        <div class="notifications">
+          <span class="material-icons" (click)="toggleNotifications()">notifications</span>
+          <!--<span *ngIf="unreadCount > 0" class="notification-count">{{ unreadCount }}</span>-->
+        </div>
+        <div class="profile" (click)="showprofile()">
+          <img src="https://cdn2.iconfinder.com/data/icons/colored-simple-circle-volume-01/128/circle-flat-general-51851bd79-1024.png" alt="profile" />
+          <div class="profile-link">
+            <div class="profile-submenu">
+              <div class="profile-info">
+                <img src="https://cdn2.iconfinder.com/data/icons/colored-simple-circle-volume-01/128/circle-flat-general-51851bd79-1024.png" alt="profile" />
+                <h3>Hi user</h3>
+              </div>
+              <hr />
+              <a href="#" class="profile-options" *ngFor="let p of profile;">
+                <i [class]="p.icon"></i>
+                <p>{{p.name}}</p>
+                <i class="fas fa-greater-than"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

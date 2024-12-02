@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  openSidebar: boolean = true;
-  
 
+  
+  //side bar lists
   Mainsidebar = [
     {
       link_name: "Dashboard",
@@ -19,7 +19,7 @@ export class AppComponent {
     {
       link_name: "My Profile",
       link: "/myprofile",
-      icon: "fas fa-user",  
+      icon: "fas fa-user",
       sub_menu: [
         { link_name: "Employee Info", link: "/myprofile/employee" },
         { link_name: "Profile", link: "/myprofile/profile" },
@@ -90,13 +90,14 @@ export class AppComponent {
     },
     {
       link_name: "Settings",
-      link: "/settings",
+      link: " ",
       icon: "fas fa-cogs",
       sub_menu: [],
       action: this.onSettingsClick.bind(this) 
     }
   ];
 
+  //setting sidebar
   Mastersidebar = [
 
     {
@@ -137,7 +138,7 @@ export class AppComponent {
 
   ];
 
-
+//to show and hide submenu
   submenu(list: HTMLElement) {
     
     const subMenu = list.querySelector('.sub_menu');
@@ -153,6 +154,7 @@ export class AppComponent {
     }
   
   }
+  //open and close setting menu
    onSettingsClick() {
     const masterSidebar = document.querySelector('.Master-sidebar');
      if (masterSidebar) {
@@ -160,5 +162,7 @@ export class AppComponent {
          masterSidebar.classList.toggle('Masterbar');
        
      }
-    }
+  }
+  //headerpart
+
 }

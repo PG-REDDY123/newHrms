@@ -26,11 +26,11 @@
       display:block;
   }
 .stepper-container .step.active-step {
-  color: white; 
-  background-color: red; 
-  font-weight: bold; 
+  color: white;
+  background-color: #0077B5;
+  font-weight: bold;
   border-radius: 5px;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
 .step.active-step:hover {

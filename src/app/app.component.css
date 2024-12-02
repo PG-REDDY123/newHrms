@@ -4,14 +4,14 @@
 }
 .sidebar {
   width: 220px;
-  background-color: white;
+  background-color: #0077B5;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   padding-top: 10px;
   transition: all 0.3s ease;
-  overflow-y:auto;
+  overflow-y: auto;
 }
   .sidebar::-webkit-scrollbar {
     width: 4px; 
@@ -31,11 +31,7 @@
       background: #555;*/ /* Darker color on hover */
     /*}*/
 
-  .sidebar.sidebar-close {
-    width: 0;
-    padding-top: 0;
-    overflow: hidden;
-  }
+ 
 
 
 .sidebar-links {
@@ -46,8 +42,9 @@
 
   .sidebar-links li {
     position: relative;
-    padding: 15px 20px;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    color:white;
+    transition: background-color 0.6s ease;
     
   }
 
@@ -64,12 +61,13 @@
         margin-right: 10px;
       }
 
-.dropdown-title {
+.submenu-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   color: black;
+  padding:10px;
 }
 
 .sub_menu {
@@ -78,10 +76,10 @@
   padding-left: 15px;
   margin: 0;
 }
-
-  .sub_menu.blank {
+/*
+  .sub_menu.none {
     display: none;
-  }
+  }*/
 
 
 .sidebar-links li a.active {
@@ -112,13 +110,10 @@
 }
 
 
-.sidebar-links li.active > .dropdown-title a {
+/*.sidebar-links li.active > .dropdown-title a {
   color: tomato;
-}
-.sub_menu {
-  display: none;
-  
-}
+}*/
+
 
   .sub_menu.showMenu {
     display: block;
@@ -129,24 +124,29 @@
 }*/
 
 .fas.fa-chevron-right {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
+  color:white;
 }
 
   .fas.fa-chevron-right.rotate {
     transform: rotate(90deg); 
   }
 
-.active-link {
+/*.active-link {
   color:red; 
    
+}*/
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+  box-sizing: border-box;
+  width:100%;
+ 
 }
-
 .content {
-flex-grow: 1;
-  margin-left: 220px; 
+ /* flex-wrap:1;*/
   padding: 20px;
   background: #f4f4f4;
-  min-height: 100vh; 
   box-sizing: border-box;
   transition: margin-left 0.3s ease;
   
@@ -154,20 +154,20 @@ flex-grow: 1;
 .Master-sidebar {
   margin-left: 240px;
   width: 220px;
-  background-color: white;
+  background-color: #0077B5;
   position: fixed;
   top: 0px;
   left: 0;
-  display:none;
+  display: none;
   padding-top: 10px;
   transition: all 0.3s ease;
   overflow-y: auto;
- 
-  border-radius:10px;
+  border-radius: 10px;
+  z-index:100;
 }
 .Master-sidebar a {
     text-decoration:none;
-    color:black;
+    color:white;
    
 
    
@@ -189,8 +189,28 @@ flex-grow: 1;
 }
 .active-link {
   color: white;
-  background-color: red;
+  /*background-color: red;*/
   font-weight: bold;
   border-radius: 5px;
  
+}
+.link_name, .subilist, i {
+  color: white;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  gap:10px;
+  background-color:darkblue;
+  padding:20px;
+}
+
+.logo img{
+    width:60px;
+}
+.logo span{
+    font-size:larger;
+    align-content:center;
+    color:white;
 }
