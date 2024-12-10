@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 style="padding:20px;">Gender Setup</h2>
+  <form [formGroup]="GenderDetailes" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col">
+        <label for="gender">Gender :</label>
+        <input type="text"
+               id="gender"
+               formControlName="gender"
+               placeholder="Enter the Gender" />
+        <div *ngIf="gender?.invalid && gender?.touched">
+          <small *ngIf="gender?.errors?.['required']">Please Enter the Gender</small>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="submit" type="submit" >Submit</button>
+      <button class="clear" type="reset">Clear</button>
+    </div>
+  </form>
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <td>S.No</td>
+          <td>Gender</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let g of genders">
+          <td><span>{{g.genderId}}</span></td>
+          <td><span>{{g.description}}</span></td>
+          <td><button type="button" > <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

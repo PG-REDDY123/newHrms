@@ -1,13 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
+    "\\.angular",
     "\\src",
-    "\\src\\app\\Components",
-    "\\src\\app\\header",
-    "\\src\\app\\myprofile",
-    "\\src\\assets\\images"
+    "\\src\\app",
+    "\\src\\app\\my-profile-setup",
+    "\\src\\app\\my-profile-setup\\blood-group",
+    "\\src\\app\\my-profile-setup\\department",
+    "\\src\\app\\my-profile-setup\\gender",
+    "\\src\\app\\my-profile-setup\\leavetype",
+    "\\src\\app\\my-profile-setup\\role"
   ],
-  "SelectedNode": "\\src\\assets",
   "PreviewInSolutionExplorer": false
 }

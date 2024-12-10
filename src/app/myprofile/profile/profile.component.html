@@ -1,1 +1,160 @@
-<p>profile works!</p>
+<div class="container">
+  <form [formGroup]="DetailsForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-4">
+        <label for="title">Title</label>
+        <select id="title"  (change)="onselectedchange()">
+          <option value="disable selected">Select Title</option>
+          <option *ngFor="let T of Title" [value]="T">{{T}}</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <label for="First">FirstName</label>
+        <input type="text"
+               id="Firt"
+               fromControlName="First"
+               placeholder="Enter FirstName"/>
+        <div *ngIf="First?.invalid && First?.touched">
+          <small *ngIf="First?.errors?.['required']">FirstName is required</small>
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="Last">LastName</label>
+        <input type="text"
+               id="Last"
+               fromControlName="Last"
+               placeholder="Enter LastName"
+               />
+        <div *ngIf="Last?.invalid && Last?.touched">
+          <small *ngIf="Last?.errors?.['required']">LastName is required</small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <label for="Dob">Date of Birth</label>
+        <input type="date"
+               id="Dob" />
+      </div>
+      <div class="col-4">
+        <label for="title">Gender</label>
+        <select id="title" (change)="onselectedchange()">
+          <option value="disable selected">Select Gender</option>
+          <option *ngFor="let T of Title" [value]="T">{{T}}</option>
+        </select>
+      </div>
+     
+    <div class="col-4">
+      <label for="title">Marital Status</label>
+      <select id="title" (change)="onselectedchange()">
+        <option value="disable selected">Select Marital Status</option>
+        <option *ngFor="let T of Title" [value]="T">{{T}}</option>
+      </select>
+    </div>
+      </div>
+    
+    <div class="row">
+      <div class="col-4">
+        <label for="title">Blood Group</label>
+        <select id="title" (change)="onselectedchange()">
+          <option value="disable selected">Select Blood Group</option>
+          <option *ngFor="let T of Title" [value]="T">{{T}}</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <label for="title">Religion</label>
+        <select id="title" (change)="onselectedchange()">
+          <option value="disable selected">Select Religion</option>
+          <option *ngFor="let T of Title" [value]="T">{{T}}</option>
+        </select>
+      </div>
+     
+      <div class="col-4">
+        <label for="Last">Passport</label>
+        <input type="text"
+               id="Last"
+               fromControlName="Last"
+               placeholder="Enter PassportNumber"
+               />
+        <div *ngIf="Last?.invalid && Last?.touched">
+          <small *ngIf="Last?.errors?.['required']">LastName is required</small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <label for="title">Country</label>
+        <input type="text"
+               id="title"
+               fromControlName="title"
+               placeholder="Enter your Country"
+               />
+        <div *ngIf="title?.invalid && title?.touched">
+          <small *ngIf="title?.errors?.['required']">Title is required</small>
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="First">State</label>
+        <input type="text"
+               id="Firt"
+               fromControlName="First"
+               placeholder="Enter your State"
+               />
+        <div *ngIf="First?.invalid && First?.touched">
+          <small *ngIf="First?.errors?.['required']">FirstName is required</small>
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="Last">City</label>
+        <input type="text"
+               id="Last"
+               fromControlName="Last"
+               placeholder="Enter your City"
+               />
+        <div *ngIf="Last?.invalid && Last?.touched">
+          <small *ngIf="Last?.errors?.['required']">LastName is required</small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <label for="title">Aadhaar Number</label>
+        <input type="text"
+               id="title"
+               fromControlName="title"
+               placeholder="Enter your Aadhaar Number"
+               />
+        <div *ngIf="title?.invalid && title?.touched">
+          <small *ngIf="title?.errors?.['required']">Title is required</small>
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="First">PAN</label>
+        <input type="text"
+               id="Firt"
+               fromControlName="First"
+               placeholder="Enter your Pan number"
+               />
+        <div *ngIf="First?.invalid && First?.touched">
+          <small *ngIf="First?.errors?.['required']">FirstName is required</small>
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="Last">UAN</label>
+        <input type="text"
+               id="Last"
+               fromControlName="Last"
+               placeholder="Enter your UAN number "
+               />
+        <div *ngIf="Last?.invalid && Last?.touched">
+          <small *ngIf="Last?.errors?.['required']">LastName is required</small>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      
+        <button type="submit">Submit Information</button>
+      
+    </div>
+  </form>
+</div>

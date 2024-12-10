@@ -1,0 +1,58 @@
+.container{
+    margin-top:20px;
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+ 
+
+}
+
+label{
+    display:block;
+    font-size:20px;
+    padding:10px;
+}
+.col-4{
+   
+    width:350px;
+    padding:20px;
+    margin:10px;
+    border-radius:20px;
+}
+  .col-4:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+  }
+input, select {
+  width: 320px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px;
+}
+small{
+    color:red;
+    font-size:15px;
+}
+.btn{
+    justify-content:center;
+    height:50px;
+    padding:10px;
+    
+}
+button{
+    padding:10px;
+    font-size:20px;
+    border-radius:20px;
+    background-color:blue;
+    color:white;
+    float:right;
+    margin-right:100px;
+    margin-bottom:3px;
+    
+}

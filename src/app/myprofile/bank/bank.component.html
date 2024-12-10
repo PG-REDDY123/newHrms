@@ -1,1 +1,57 @@
-<p>bank works!</p>
+<div class="cointainer">
+  <form [formGroup]="BankDetailes" (onSubmit)=" onSubmit()" >
+    <div class="row">
+      <div class="col-6">
+        <label for="Bank">Name of Bank</label>
+        <input type="text"
+               id="Bank"
+               formControlName="Bank"
+               placeholder="Enter the Bank Name"
+               />
+        <div *ngIf="Bank?.invalid && Bank?.touched">
+          <small *ngIf="Bank?.errors?.['required']">Bank name is required</small>
+        </div>
+      </div>
+      <div class="col-6">
+        <label for="Account">Account Number</label>
+        <input type="text"
+               id="Account"
+               formControlName="Account"
+               placeholder="Enter your Account Number"
+               />
+        <div *ngIf="Account?.invalid && Account?.touched">
+          <small *ngIf="Account?.errors?.['required']">Account Number is Mandratory</small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <label for="ifsc">IFSC Code</label>
+        <input type="text"
+               id="ifsc"
+               formControlName="ifsc"
+               placeholder="Enter your ifsc code" />
+        <div *ngIf="ifsc?.invalid && ifsc?.touched">
+          <small *ngIf="ifsc?.errors?.['required']">ifsc code is Mandratory</small>
+        </div>
+      </div>
+      <div class="col-6">
+        <label for="Type">Account Type</label>
+        <select id="Type" (change)="onselectedchange()">
+          <option value="disable selected">Select Account Type</option>
+          <option *ngFor="let ac of AccountType" [value]="ac">{{ac}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="Address">Branch Address</label>
+        <textarea id="Address" cols="100" rows="10" placeholder="Branch Addres"></textarea>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="submit" type="submit">Submit</button>
+      <button class="clear" type="reset">Clear</button>
+    </div>
+  </form>
+</div>

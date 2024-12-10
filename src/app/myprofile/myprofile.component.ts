@@ -23,10 +23,6 @@ export class MyprofileComponent {
       Link_name: "Bank",
       link: "/myprofile/bank",
     },
-    {
-      Link_name: "Accessories",
-      link: "/myprofile/accessories",
-    }
   ]
 
 }

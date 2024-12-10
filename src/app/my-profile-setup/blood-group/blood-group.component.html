@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 style="padding:20px;">Blood Group Setup</h2>
+  <form  (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col">
+        <label for="gender">Blood Group :</label>
+        <input type="text"
+               id="gender"
+               formControlName="gender"
+               placeholder="Enter the Gender" />
+        <div *ngIf="gender?.invalid && gender?.touched">
+          <small *ngIf="gender?.errors?.['required']">Please Enter the Gender</small>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="submit" type="submit" (click)="additem()">Submit</button>
+      <button class="clear" type="reset">Clear</button>
+    </div>
+  </form>
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <td>S.No</td>
+          <td>Blood Group</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span></span></td>
+          <td><span>o+</span></td>
+          <td><button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -16,16 +16,16 @@
   flex: 1;
   clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%);
   transition: background-color 0.3s, color 0.3s;
-
 }
 
-  
 
-  .step a{
-      text-decoration:none;
-      color:inherit;
-      display:block;
+
+  .step a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
   }
+
 .stepper-container .step.active-step {
   color: white;
   background-color: #0077B5;
@@ -35,11 +35,11 @@
 }
 
 .step.active-step:hover {
-  background-color: darkred; 
+  background-color: darkred;
 }
 
 .step.active-step a:hover {
-  color: white;  
+  color: white;
 }
 /*.stepper-container {
   display: flex;
@@ -61,28 +61,28 @@
   transition: background-color 0.3s, color 0.3s;*/ /* Smooth transition for background and text color */
 /*}*/
 
-  /* Styling for links */
-  /*.step a {
+/* Styling for links */
+/*.step a {
     text-decoration: none;
     color: inherit;*/ /* Inherit the color from parent */
-    /*display: block;
+/*display: block;
   }*/
 
-  /* Active step styling */
-  /*.step.active-step {
+/* Active step styling */
+/*.step.active-step {
     background-color: red;*/ /* Red background for the entire polygon */
-    /*color: white;*/ /* White text for active step */
-  /*}
+/*color: white;*/ /* White text for active step */
+/*}
 
     .step.active-step a {
       color: white;*/ /* Ensure the link text is white when active */
-    /*}*/
+/*}*/
 
-    /* Optional: Hover effect for active step */
-    /*.step.active-step:hover {
+/* Optional: Hover effect for active step */
+/*.step.active-step:hover {
       background-color: darkred;*/ /* Darker red on hover */
-    /*}
+/*}
 
     .step.active-step a:hover {
       color: white;*/ /* Ensure the link text remains white */
-    /*}*/
+/*}*/

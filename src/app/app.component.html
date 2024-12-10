@@ -1,18 +1,19 @@
 <div class="container">
   <div class="sidebar">
     <div class="logo">
-      <img src="https://media.glassdoor.com/sql/2339017/normal-denmark-squareLogo-1650977913112.png" alt="cmplogo" />
+      <img style="background-color:aliceblue;padding:5px;border-radius:5px;" src="Skywaves-logo.webp" alt="cmplogo" />
       <span>SkyWaves</span>
 
     </div>
     <ul class="sidebar-links">
       <li *ngFor="let i of Mainsidebar;let k = index;" #list>
-        <div *ngIf="i.sub_menu.length == 0" class="submenu-list">
+        <div *ngIf="i.sub_menu.length == 0 && i.Child_sub_menu.length == 0" class="submenu-list">
           <a [routerLink]="[i.link]" (click)="i.action && i.action()" [routerLinkActive]="['active-link']" [routerLinkActiveOptions]="{exact: false}">
             <i [class]="i.icon"></i>
             <span class="link_name">{{i.link_name}}</span>
           </a>
         </div>
+
         <div *ngIf="i.sub_menu.length > 0" class="submenu-list" (click)="submenu(list)"
              [routerLink]="[i.link]"
              [routerLinkActive]="['active-link']"
@@ -24,21 +25,39 @@
           <i class="fas fa-chevron-right"></i>
         </div>
         <ul class="sub_menu">
-          <li *ngFor="let sub of i.sub_menu">
-            <a [routerLink]="[sub.link]"><span class="subilist">{{sub.link_name}}</span></a>
+          <li *ngFor="let sub of i.sub_menu" #menu>
+            <div *ngIf="sub.Child_sub_menu && sub.Child_sub_menu.length == 0" class="submenu-list">
+              <a [routerLink]="[sub.link]"><span class="link_name">{{sub.link_name}}</span></a>
+            </div>
+
+            <div *ngIf="sub.Child_sub_menu && sub.Child_sub_menu.length > 0" class="submenu-list" (click)="childsubmenu(menu)"
+                 [routerLink]="[sub.link]"
+                 [routerLinkActive]="['active-link']"
+                 [routerLinkActiveOptions]="{exact: false}">
+              <a>
+                <i [class]="sub.icon"></i>
+                <span class="link_name">{{sub.link_name}}</span>
+              </a>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <ul class="childmenu">
+              <li *ngFor="let child of sub.Child_sub_menu">
+                <a [routerLink]="[child.link]"><span class="subilist1">{{child.link_name}}</span></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
     </ul>
   </div>
-  <div class="Master-sidebar">
+  <!--<div class="Master-sidebar">
     <div *ngFor="let m of  Mastersidebar" class="list" [routerLinkActive]="['active-link']" [routerLinkActiveOptions]="{exact: true}">
       <a [routerLink]="[m.link]">
         <i [class]="m.icon"></i>
-        <span class="master-name">{{m.link_name}}</span>
+        <span class="master-name"></span>
       </a>
     </div>
-  </div>
+  </div>-->
   <div class="main-content">
     <div class="header">
       <app-header></app-header>
