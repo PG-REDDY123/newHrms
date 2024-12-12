@@ -1,13 +1,13 @@
 <div class="cointainer">
-  <form [formGroup]="BankDetailes" (onSubmit)=" onSubmit()" >
+  <form [formGroup]="BankDetailes" (onSubmit)=" onSubmit()">
+    <h2 style="padding:10px;">Bank Detailes</h2>
     <div class="row">
       <div class="col-6">
         <label for="Bank">Name of Bank</label>
         <input type="text"
                id="Bank"
                formControlName="Bank"
-               placeholder="Enter the Bank Name"
-               />
+               placeholder="Enter the Bank Name" />
         <div *ngIf="Bank?.invalid && Bank?.touched">
           <small *ngIf="Bank?.errors?.['required']">Bank name is required</small>
         </div>
@@ -17,8 +17,7 @@
         <input type="text"
                id="Account"
                formControlName="Account"
-               placeholder="Enter your Account Number"
-               />
+               placeholder="Enter your Account Number" />
         <div *ngIf="Account?.invalid && Account?.touched">
           <small *ngIf="Account?.errors?.['required']">Account Number is Mandratory</small>
         </div>

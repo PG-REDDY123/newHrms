@@ -1,1 +1,101 @@
-<p>employeeifo works!</p>
+<div class="container">
+  <h2 style="padding:10px;">Employee Information</h2>
+  <div class="row">
+    <div class="col-6" *ngFor="let e of Employee">
+      <div class="profile-img">
+        <img [src]="e.img" />
+      </div>
+      <div class="detailes">
+        <table>
+          <tr>
+            <td><i class="fa-solid fa-address-card"></i></td>:
+            <td>{{e.Id}}</td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-user-tie"></i></td>:
+            <td>{{e.Name}}</td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-phone"></i></td>:
+            <td>{{e.mobile}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col">
+      <div class="personal-info">
+        <h2> <i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Personal Information</h2>
+        <hr />
+        <div class="personal-info-table">
+          <table>
+            <tr>
+              <td>Date Of Birth</td>:
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Gender</td>:
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Blood Group</td>:
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Personal Contact</td>:
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Personal Email</td>:
+              <td> </td>
+            </tr>
+            <tr>
+              <td>Location</td>:
+              <td> </td>
+            </tr>
+          </table>
+        </div>
+        <div class="emergency-info">
+          <h2> <i class="fa-solid fa-kit-medical"></i>&nbsp;&nbsp;Emergency Contact</h2>
+          <hr />
+          <div class="emergency-info-table">
+            <table>
+              <tr>
+                <td>Name</td>:
+                <td></td>
+              </tr>
+              <tr>
+                <td>Contact</td>:
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="bank-info">
+          <h2> <i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;Personal Information</h2>
+          <hr />
+          <div class="bank-info-table">
+            <table>
+              <tr>
+                <th>IFSC Code</th>
+                <td>: </td>
+              </tr>
+              <tr>
+                <th>Account Number</th>
+                <td>: </td>
+              </tr>
+              <tr>
+                <th>Bank Name</th>
+                <td>: </td>
+              </tr>
+              <tr>
+                <th>Bank Branch</th>
+                <td>: </td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

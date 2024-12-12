@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class SetupService {
 
-  url = "http://localhost:5224/api/GenderApi";
+  url = 'http://localhost:5224/api/GenderApi';
   constructor(private http: HttpClient) { }
 
   getGenders() {
@@ -14,3 +14,4 @@ export class SetupService {
   }
 
 }
+

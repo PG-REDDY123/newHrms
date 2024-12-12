@@ -1,0 +1,59 @@
+<div class="container">
+  <form [formGroup]="UploadForms" (onSubmit)=" onSubmit()">
+    <h2 style="padding:10px;">Documents</h2>
+    <div class="row">
+      <div class="col-6">
+        <label for="Form11">Form 11:</label>
+        <input type="file"
+               formControlName="Form11"
+               id="Form11" />
+        <div *ngIf="Form11?.invalid && Form11?.touched">
+          <small *ngIf="Form11?.errors?.['required']">Please upload your Form11</small>
+        </div>
+      </div>
+      <div class="col-6">
+        <label for="Form16">Form 11:</label>
+        <input type="file"
+               formControlName="Form16"
+               id="Form16" />
+        <div *ngIf="Form16?.invalid && Form11?.touched">
+          <small *ngIf="Form16?.errors?.['required']">Please upload your Form11</small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <label for="Pay">Pay Slips:</label>
+        <input type="file"
+               formControlName="Pay"
+               id="Pay" />
+        <div *ngIf="Pay?.invalid && Pay?.touched">
+          <small *ngIf="Pay?.errors?.['required']">Please upload your Payslips...</small>
+        </div>
+      </div>
+      <div class="col-6">
+        <label for="letter">Reveling letter:</label>
+        <input type="file"
+               formControlName="letter"
+               id="letter" />
+        <div *ngIf="letter?.invalid && letter?.touched">
+          <small *ngIf="letter?.errors?.['required']">Please upload your Reveling letters..</small>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="employement">Previous Employement:</label>
+        <input type="file"
+               id="employement"
+               formControlName="employement" />
+        <div *ngIf="employement?.invalid && employement?.touched">
+          <small *ngIf="employement?.errors?.['required']">Please upload your Previous Employement..</small>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <button type="button">Upload Files</button>
+    </div>
+  </form>
+</div>

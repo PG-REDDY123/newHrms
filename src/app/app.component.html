@@ -27,7 +27,10 @@
         <ul class="sub_menu">
           <li *ngFor="let sub of i.sub_menu" #menu>
             <div *ngIf="sub.Child_sub_menu && sub.Child_sub_menu.length == 0" class="submenu-list">
-              <a [routerLink]="[sub.link]"><span class="link_name">{{sub.link_name}}</span></a>
+              <a [routerLink]="[sub.link]">
+                <i [class]="sub.icon"></i>
+                <span class="link_name">{{sub.link_name}}</span>
+              </a>
             </div>
 
             <div *ngIf="sub.Child_sub_menu && sub.Child_sub_menu.length > 0" class="submenu-list" (click)="childsubmenu(menu)"
@@ -42,7 +45,9 @@
             </div>
             <ul class="childmenu">
               <li *ngFor="let child of sub.Child_sub_menu">
-                <a [routerLink]="[child.link]"><span class="subilist1">{{child.link_name}}</span></a>
+                <a [routerLink]="[child.link]">
+                  <i [class]="child.icon"></i><span class="subilist1">{{child.link_name}}</span>
+                </a>
               </li>
             </ul>
           </li>
