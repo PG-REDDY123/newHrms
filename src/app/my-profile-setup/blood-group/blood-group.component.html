@@ -1,15 +1,15 @@
 <div class="container">
-  <h2 style="padding:20px;">Blood Group Setup</h2>
-  <form  (ngSubmit)="onSubmit()">
+  <h2 style="padding: 20px; color: #0077B5;">Blood Group Setup</h2>
+  <form [formGroup]="bloodDetailes" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col">
-        <label for="gender">Blood Group :</label>
+        <label for="blood">Blood Group :</label>
         <input type="text"
-               id="gender"
-               formControlName="gender"
-               placeholder="Enter the Gender" />
-        <div *ngIf="gender?.invalid && gender?.touched">
-          <small *ngIf="gender?.errors?.['required']">Please Enter the Gender</small>
+               id="blood"
+               formControlName="blood"
+               placeholder="Enter the blood" />
+        <div *ngIf="blood?.invalid && blood?.touched">
+          <small *ngIf="blood?.errors?.['required']">Please Enter the bloodGroup</small>
         </div>
       </div>
     </div>

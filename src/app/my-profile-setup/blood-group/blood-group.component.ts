@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './blood-group.component.css'
 })
 export class BloodGroupComponent {
-  GenderDetailes!: FormGroup;
+  bloodDetailes!: FormGroup;
   listData = [
     {
       gender: "male"
@@ -15,18 +15,18 @@ export class BloodGroupComponent {
   ];
   constructor(private fb: FormBuilder) { }
   ngOnInit() {
-    this.GenderDetailes = this.fb.group({
-      gender: ['', [Validators.required]]
+    this.bloodDetailes = this.fb.group({
+      blood: ['', [Validators.required]]
     })
   }
 
-  get gender() {
-    return this.GenderDetailes.get('gender');
+  get blood() {
+    return this.bloodDetailes.get('blood');
   }
 
   additem() {
-    this.listData.push(this.GenderDetailes.value);
-    this.GenderDetailes.reset();
+    this.listData.push(this.bloodDetailes.value);
+    this.bloodDetailes.reset();
   }
   onSubmit() {
 

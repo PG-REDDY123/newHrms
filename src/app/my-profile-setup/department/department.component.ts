@@ -7,27 +7,20 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './department.component.css'
 })
 export class DepartmentComponent {
-  GenderDetailes!: FormGroup;
-  listData = [
-    {
-      gender: "male"
-    }
-  ];
+  DepartmentDetailes!: FormGroup;
+
   constructor(private fb: FormBuilder) { }
   ngOnInit() {
-    this.GenderDetailes = this.fb.group({
-      gender: ['', [Validators.required]]
+    this.DepartmentDetailes = this.fb.group({
+      Department: ['', [Validators.required]]
     })
   }
 
-  get gender() {
-    return this.GenderDetailes.get('gender');
+  get Department() {
+    return this.DepartmentDetailes.get('Department');
   }
 
-  additem() {
-    this.listData.push(this.GenderDetailes.value);
-    this.GenderDetailes.reset();
-  }
+ 
   onSubmit() {
 
   }

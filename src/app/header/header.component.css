@@ -1,14 +1,13 @@
 .container {
 
-  position: fixed;
-  z-index: 100;
   border-radius: 40px;
   margin: 10px;
   justify-content: center;
 
 }
 .header {
-  width: 100%;
+  position: fixed;
+  width: 85%;
   background-color: #0077B5;
   display: flex;
   align-content: center;
@@ -16,6 +15,7 @@
   padding: 10px;
   box-sizing: border-box;
   border-radius: 40px;
+  z-index: 100;
 }
 .search-bar {
   display: flex;

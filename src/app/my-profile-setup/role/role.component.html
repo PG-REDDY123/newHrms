@@ -1,15 +1,15 @@
 <div class="container">
-  <h2 style="padding:20px;">Role Setup</h2>
-  <form (ngSubmit)="onSubmit()">
+  <h2 style="padding: 20px; color: #0077B5">Role Setup</h2>
+  <form [formGroup]="roleDetailes" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col">
-        <label for="gender">Role :</label>
+        <label for="role">Role :</label>
         <input type="text"
-               id="gender"
-               formControlName="gender"
-               placeholder="Enter the Gender" />
-        <div *ngIf="gender?.invalid && gender?.touched">
-          <small *ngIf="gender?.errors?.['required']">Please Enter the Gender</small>
+               id="role"
+               formControlName="role"
+               placeholder="Enter the role" />
+        <div *ngIf="role?.invalid && role?.touched">
+          <small *ngIf="role?.errors?.['required']">Please Enter the Role</small>
         </div>
       </div>
     </div>

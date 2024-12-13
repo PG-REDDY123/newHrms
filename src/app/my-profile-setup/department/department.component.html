@@ -1,20 +1,20 @@
 <div class="container">
-  <h2 style="padding:20px;">Deparement Setup</h2>
-  <form (ngSubmit)="onSubmit()">
+  <h2 style="padding: 20px; color: #0077B5;">Deparement Setup</h2>
+  <form [formGroup]="DepartmentDetailes" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col">
-        <label for="gender">Deparement :</label>
+        <label for="Department">Deparement :</label>
         <input type="text"
-               id="gender"
-               formControlName="gender"
-               placeholder="Enter the Gender" />
-        <div *ngIf="gender?.invalid && gender?.touched">
-          <small *ngIf="gender?.errors?.['required']">Please Enter the Gender</small>
+               id="Department"
+               formControlName="Department"
+               placeholder="Enter the Department" />
+        <div *ngIf="Department?.invalid && Department?.touched">
+          <small *ngIf="Department?.errors?.['required']">Please Enter the Deparement</small>
         </div>
       </div>
     </div>
     <div class="buttons">
-      <button class="submit" type="submit" (click)="additem()">Submit</button>
+      <button class="submit" type="submit" >Submit</button>
       <button class="clear" type="reset">Clear</button>
     </div>
   </form>

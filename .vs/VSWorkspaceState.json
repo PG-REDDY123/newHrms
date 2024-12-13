@@ -3,14 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\my-profile-setup\\department",
-    "\\src\\app\\my-profile-setup\\gender",
-    "\\src\\app\\my-profile-setup\\leavetype",
-    "\\src\\app\\my-profile-setup\\role",
-    "\\src\\app\\myprofile",
-    "\\src\\app\\myprofile\\bank",
-    "\\src\\app\\myprofile\\employeeifo"
+    "\\src\\app\\my-profile-setup",
+    "\\src\\app\\my-profile-setup\\leavetype"
   ],
-  "SelectedNode": "\\src\\app\\app.component.css",
   "PreviewInSolutionExplorer": false
 }

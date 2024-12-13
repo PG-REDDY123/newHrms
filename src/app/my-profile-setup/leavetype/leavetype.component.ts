@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './leavetype.component.css'
 })
 export class LeavetypeComponent {
-  GenderDetailes!: FormGroup;
+  leaveDetailes!: FormGroup;
   listData = [
     {
       gender: "male"
@@ -15,18 +15,18 @@ export class LeavetypeComponent {
   ];
   constructor(private fb: FormBuilder) { }
   ngOnInit() {
-    this.GenderDetailes = this.fb.group({
-      gender: ['', [Validators.required]]
+    this.leaveDetailes = this.fb.group({
+      leave: ['', [Validators.required]]
     })
   }
 
-  get gender() {
-    return this.GenderDetailes.get('gender');
+  get leave() {
+    return this.leaveDetailes.get('leave');
   }
 
   additem() {
-    this.listData.push(this.GenderDetailes.value);
-    this.GenderDetailes.reset();
+    this.listData.push(this.leaveDetailes.value);
+    this.leaveDetailes.reset();
   }
   onSubmit() {
 

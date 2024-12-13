@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './role.component.css'
 })
 export class RoleComponent {
-  GenderDetailes!: FormGroup;
+  roleDetailes!: FormGroup;
   listData = [
     {
       gender: "male"
@@ -15,18 +15,18 @@ export class RoleComponent {
   ];
   constructor(private fb: FormBuilder) { }
   ngOnInit() {
-    this.GenderDetailes = this.fb.group({
-      gender: ['', [Validators.required]]
+    this.roleDetailes = this.fb.group({
+      role: ['', [Validators.required]]
     })
   }
 
-  get gender() {
-    return this.GenderDetailes.get('gender');
+  get role() {
+    return this.roleDetailes.get('role');
   }
 
   additem() {
-    this.listData.push(this.GenderDetailes.value);
-    this.GenderDetailes.reset();
+    this.listData.push(this.roleDetailes.value);
+    this.roleDetailes.reset();
   }
   onSubmit() {
 

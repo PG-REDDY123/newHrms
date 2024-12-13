@@ -34,7 +34,7 @@ export class AppComponent {
     },
     {
       link_name: "My Profile",
-      link: "/myprofile",
+      link: "/myprofile/employee",
       icon: "fas fa-user",
       sub_menu: [
         { link_name: "Employee Info", link: "/myprofile/employee", icon: "fas fa-id-card", Child_sub_menu: [] },
@@ -110,7 +110,7 @@ export class AppComponent {
       sub_menu: [
         {
           link_name: "My Profile Setup",
-          link: "/profilesetup",
+          link: "/profilesetup/Gender",
           icon: "fas fa-cogs",
           Child_sub_menu: [
             { link_name: "Gender", link: "/profilesetup/Gender", icon: "fas fa-venus-mars" },

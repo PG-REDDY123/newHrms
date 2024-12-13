@@ -19,6 +19,9 @@ import { RoleComponent } from './my-profile-setup/role/role.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { GenderComponent } from './my-profile-setup/gender/gender.component';
+import { DepartmentComponent } from './my-profile-setup/department/department.component';
+import { BloodGroupComponent } from './my-profile-setup/blood-group/blood-group.component';
+import { LeavetypeComponent } from './my-profile-setup/leavetype/leavetype.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,11 @@ import { GenderComponent } from './my-profile-setup/gender/gender.component';
     HeaderComponent,
     MyProfileSetupComponent,
     RoleComponent,
-     GenderComponent
+    GenderComponent,
+    DepartmentComponent,
+    BloodGroupComponent,
+    LeavetypeComponent,
+     RoleComponent
    
   ],
   imports: [

@@ -1,15 +1,15 @@
 <div class="container">
-  <h2 style="padding:20px;">LeaveType Setup</h2>
-  <form (ngSubmit)="onSubmit()">
+  <h2 style="padding: 20px; color: #0077B5;">LeaveType Setup</h2>
+  <form [formGroup]="leaveDetailes" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col">
-        <label for="gender">Leave Type :</label>
+        <label for="leave">Leave Type :</label>
         <input type="text"
-               id="gender"
-               formControlName="gender"
-               placeholder="Enter the Gender" />
-        <div *ngIf="gender?.invalid && gender?.touched">
-          <small *ngIf="gender?.errors?.['required']">Please Enter the Gender</small>
+               id="leave"
+               formControlName="leave"
+               placeholder="Enter the leavetype" />
+        <div *ngIf="leave?.invalid && leave?.touched">
+          <small *ngIf="leave?.errors?.['required']">Please Enter the Leavetype</small>
         </div>
       </div>
     </div>
