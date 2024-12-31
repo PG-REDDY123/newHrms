@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <table>
+            <tr>
+                <th>Annual Salary</th>
+                <th>Basic Wage</th>
+                <th>DA</th>
+                <th>HRA</th>
+                <th>Conveyance Allowance</th>
+                <th>Other Allowance</th>
+                <th>EPFO</th>
+                <th>ESI Health INS</th>
+                <th>Professional Tax</th>
+                <th>TDS</th>
+                <th>Miscellaneous</th>
+                <th>Action</th>
+            </tr>
+            <tr *ngFor="let a of earnings">
+                <td>{{a.AnnualSalary}}</td>
+                <td>{{a.BasicWage}}</td>
+                <td>{{a.DA}}</td>
+                <td>{{a.HRA}}</td>
+                <td>{{a.ConveyanceAllowance}}</td>
+                <td>{{a.OtherAllowance}}</td>
+                <td>{{a.EPFO}}</td>
+                <td>{{a.ESIHealthINS}}</td>
+                <td>{{a.ProfessionalTax}}</td>
+                <td>{{a.TDS}}</td>
+                <td>{{a.Miscellaneous}}</td>
+                <td> <button style="background-color: white;border-radius: 5px;margin: auto;"><i class="fas fa-pencil-alt" style="color: tomato;padding: 10px;"></i>
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button style="background-color: white;border-radius: 5px;margin: auto;"><i class="fas fa-trash-alt" style="color: tomato;padding: 10px;"></i>
+                </button></td>
+            </tr>
+        </table>
+    </div>
+</div>

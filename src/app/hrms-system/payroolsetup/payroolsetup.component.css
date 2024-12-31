@@ -1,0 +1,89 @@
+.stepper-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+  }
+  
+  .step {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  
+  
+    .step a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  
+  .stepper-container .step.active-step {
+    color: white;
+    background-color: #0077B5;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  
+  .step.active-step:hover {
+    background-color: darkred;
+  }
+  
+  .step.active-step a:hover {
+    color: white;
+  }
+  /*.stepper-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+  }
+  
+  .step {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%);
+    transition: background-color 0.3s, color 0.3s;*/ /* Smooth transition for background and text color */
+  /*}*/
+  
+  /* Styling for links */
+  /*.step a {
+      text-decoration: none;
+      color: inherit;*/ /* Inherit the color from parent */
+  /*display: block;
+    }*/
+  
+  /* Active step styling */
+  /*.step.active-step {
+      background-color: red;*/ /* Red background for the entire polygon */
+  /*color: white;*/ /* White text for active step */
+  /*}
+  
+      .step.active-step a {
+        color: white;*/ /* Ensure the link text is white when active */
+  /*}*/
+  
+  /* Optional: Hover effect for active step */
+  /*.step.active-step:hover {
+        background-color: darkred;*/ /* Darker red on hover */
+  /*}
+  
+      .step.active-step a:hover {
+        color: white;*/ /* Ensure the link text remains white */
+  /*}*/
+  

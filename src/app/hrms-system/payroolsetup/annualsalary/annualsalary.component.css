@@ -1,0 +1,53 @@
+.container{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+.row{
+    display:flex;
+    justify-content: center;
+   
+   
+}
+table{
+ width:1000px;
+ overflow-x: scroll;
+}
+th{
+    font-size: 20px;
+    padding:10px;
+}
+td,i{
+    font-size: 15px;
+    padding:10px;
+    text-align: center;
+}
+table,tr{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+.head-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+input{
+    width:200px;
+    height:35px;
+    border-radius:10px;
+    padding:5px;
+    font-size: large;
+}
+select{
+    width:100px;
+    height:35px;
+    border-radius:10px;
+    padding:5px;
+    font-size: medium;
+}
+label{
+    font-size: 20px;
+}

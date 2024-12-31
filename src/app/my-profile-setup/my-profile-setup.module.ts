@@ -10,7 +10,7 @@ import {  ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { SetupService } from './setup.service';
-import { GenderComponent } from './gender/gender.component';
+import { GenderComponent } from './gender/GenderComponent';
 
 
 

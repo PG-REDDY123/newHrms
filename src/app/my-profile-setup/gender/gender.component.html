@@ -1,5 +1,9 @@
 <div class="container">
   <h2 style="padding: 20px; color: #0077B5;">Gender Setup</h2>
+  <br>
+  <div *ngIf="loading" class="load-spinner">
+    <div class="spinner"></div>
+  </div>
   <form [formGroup]="GenderDetailes" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="col">
@@ -7,20 +11,22 @@
         <input type="text"
                id="gender"
                formControlName="gender"
-               placeholder="Enter the Gender" />
-        <div *ngIf="gender?.invalid && gender?.touched">
+               placeholder="Enter the Gender"
+               [(ngModel)]="Genderdescription"
+               />
+        <div class="error" *ngIf="gender?.invalid && gender?.touched">
           <small *ngIf="gender?.errors?.['required']">Please Enter the Gender</small>
         </div>
       </div>
     </div>
     <div class="buttons">
-      <button class="submit" type="submit" >Submit</button>
+      <button class="submit" type="submit" [disabled]="GenderDetailes.invalid" >Submit</button>
       <button class="clear" type="reset">Clear</button>
     </div>
   </form>
   <div class="table">
     <table>
-      <thead>
+      <thead style="color:#0077B5" >
         <tr>
           <td>S.No</td>
           <td>Gender</td>
@@ -29,9 +35,24 @@
       </thead>
       <tbody>
         <tr *ngFor="let g of genders">
-          <td><span>{{g.genderId}}</span></td>
-          <td><span>{{g.description}}</span></td>
-          <td><button type="button"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+          <td>         
+            <span>{{g.genderId}}</span></td>
+          <td>
+            <span *ngIf="g.edit">
+             <input style="width: auto;border-radius: 0;" type="text" [(ngModel)]="g.description"/>
+            </span>        
+            <span *ngIf="!g.edit">{{g.description}}</span>    
+        </td>
+          <td>
+          <div *ngIf="!g.edit">
+          <button type="button" (click)="genderEdit(g)" > <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" (click)="genderdelete(g.genderId)"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button>
+        </div>
+        <div *ngIf="g.edit">
+          <button type="button" (click)="Update(g)" > <i class="fa fa-refresh" style="font-size: 15px; padding: 10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" (click)="close(g)"> <i class="fa fa-window-close" style="font-size:15px;padding:10px;"></i></button>
+        </div>
+        </td>
         </tr>
       </tbody>
     </table>

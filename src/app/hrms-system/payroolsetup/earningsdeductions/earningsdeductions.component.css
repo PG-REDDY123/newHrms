@@ -1,0 +1,27 @@
+.container{
+    display:flex;
+    margin:20px;
+    border:1px solid black;
+    padding:20px;
+    width:95%;
+}
+.row{
+   
+    padding: 10px;
+    border:1px solid black;
+    overflow-x: auto;
+    width:100%;
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding:10px;
+    white-space: nowrap;
+}
+th{
+    font-size:large;
+    white-space: nowrap;
+}
+table{
+    width: 1500px;
+}

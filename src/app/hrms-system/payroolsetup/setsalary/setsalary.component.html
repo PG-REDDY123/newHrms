@@ -1,0 +1,437 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Employee Salary</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="openemployeesalary()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                        <thead>
+                            <tr>
+                            <th>PaySlip</th>
+                            <th>Type</th>
+                            <th>Salary</th>
+                        </tr>
+                        </thead>      
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Days</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="opendays()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                        <thead>
+                            <tr>
+                            <th>Month</th>
+                            <th>Working Days</th>
+                            <th>Leave Days</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>            
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style="justify-content: space-around;display: flex;" ><button style="background-color: white;border-radius: 5px;margin: auto;"><i class="fas fa-pencil-alt" style="color: tomato;"></i>
+                            </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button style="background-color: white;border-radius: 5px;margin: auto;"><i class="fas fa-trash-alt" style="color: tomato;"></i>
+                            </button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Allowance</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="openallowance()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Allowance Options</th>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>            
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Submission</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="opensubmission()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Month</th>
+                        <th>Working Days</th>
+                        <th>Leave Days</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>          
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Loan</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="openloan()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Title</th>
+                        <th>Loan Option</th>
+                        <th>Type</th>
+                        <th>Loan Amount</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Reason</th>
+                    </tr>
+                    </thead>           
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Saturation Deduction</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="opensaturation()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Deduction Option</th>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>         
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+     <div class="row">
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Other Payments</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="openpayments()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>            
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="head-section">
+                <div class="title">
+                    <span><h2>Overtime</h2></span>
+                </div>
+                <div class="add-btn">
+                    <button (click)="openovertime()">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body-section">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Overtime Title</th>
+                        <th>Days</th>
+                        <th>Hours</th>
+                        <th>Rate</th>
+                    </tr>
+                    </thead>           
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="Employeesalary">
+    <div class="content">
+        <div class="headpart">
+        <div class="headpart-title">
+            <h2>Create Employee Salary</h2>
+        </div>
+        <div class="close" (click)="popupclose()">
+            &times;
+        </div>
+    </div>
+    <div class="bodypart">
+       
+    </div>
+    </div>
+</div>
+<div class="popup" *ngIf="days">
+    <div class="content">
+        <div class="headpart">
+            <div class="headpart-title">
+                <h2>Create Days</h2>
+            </div>
+            <div class="close" (click)="popupclose()">
+                &times;
+            </div>
+        </div>
+        <div class="bodypart">
+            
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="allowance">
+    <div class="content">
+        <div class="headpart">
+            <div class="headpart-title">
+                <h2>Create Allowance</h2>
+            </div>
+            <div class="close" (click)="popupclose()">
+                &times;
+            </div>
+        </div>
+        <div class="bodypart">
+            <form [formGroup]="Allowancedata" (onSubmit)="allowancesubmit()">
+                <div class="row">
+                    <div class="col">
+                    <label for="allowance">Allowance Options</label>
+                    <br>
+                    <select id="allowance" onchange="onselectedallowance()">
+                        <option value="disable selected">Select Allowance </option>
+                        <option value="Conveyance allowance">Conveyance allowance</option>
+                        <option value="Medical Allowance">Medical Allowance</option>
+                        <option value="Education Allowance">Education Allowance</option>
+                        <option value="Leave Travel Allowance">Leave Travel Allowance</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="title">Title</label>
+                    <br>
+                    <input type="text" placeholder="enter the Title" formControlName="title">
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="type">Type</label>
+                        <br>
+                        <select id="type" onchange="onselectedallowance()">
+                            <option value="disable selected">Select Allowance Type</option>
+                            <option value="Conveyance allowance">Fixed</option>
+                            <option value="Conveyance allowance">Percentage</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="amount">Amount</label>
+                        <br>
+                        <input type="number" id="amount" formControlName="Amount">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="buttons">
+                        <div class="button1">
+                            <button type="reset" class="btncancle">Cancle</button>
+                        </div>
+                        <div class="button2">
+                            <button type="submit" class="btnsubmit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="submission">
+    <div class="content">
+        <div class="headpart">
+            <div class="headpart-title">
+                <h2>Create Submissions</h2>
+            </div>
+            <div class="close" (click)="popupclose()">
+                &times;
+            </div>
+        </div>
+        <div class="bodypart">
+            
+
+           
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="loan">
+    <div class="content">
+        <div class="headpart">
+            <div class="headpart-title">
+                <h2>Create Loan</h2>
+            </div>
+            <div class="close" (click)="popupclose()">
+                &times;
+            </div>
+        </div>
+        <div class="bodypart">
+           
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="saturation">
+    <div class="content">
+        <div class="headpart">
+            <div class="headpart-title">
+                <h2>Create Saturation Deduction</h2>
+            </div>
+            <div class="close" (click)="popupclose()">
+                &times;
+            </div>
+        </div>
+        <div class="bodypart">
+          
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="payments">
+    <div class="content">
+        <div class="headpart">
+            <div class="headpart-title">
+                <h2>Create Other Payments</h2>
+            </div>
+            <div class="close" (click)="popupclose()">
+                &times;
+            </div>
+        </div>
+        <div class="bodypart">
+           
+        </div>
+    </div>
+</div>
+<div class="popup" *ngIf="overtime">
+    <div class="content">
+        <div class="headpart">
+            <div class="headpart-title">
+                <h2>Create Overtime</h2>
+            </div>
+            <div class="close" (click)="popupclose()">
+                &times;
+            </div>
+        </div>
+        <div class="bodypart">
+           
+        </div>
+    </div>
+</div>

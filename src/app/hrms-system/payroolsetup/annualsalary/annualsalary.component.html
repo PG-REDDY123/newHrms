@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="head-section">
+                <div class="pages">
+                    <label for="pages">Select Entries &nbsp;:&nbsp;&nbsp;</label>
+                    <select name="pages" id ="pages" [(ngModel)]="recordperslide" (change)="selectedvalue($event)">
+                        <option value= "4"  >4</option>
+                        <option value= "8" >8</option>
+                        <option value= "12" >12</option>
+                    </select>
+                </div>
+                <div class="searchbar">
+                    <input type="search" placeholder="search Annual salary here" [(ngModel)]="searchinformation"  (input)="onsearch($event)">
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Annual Salary</th>
+                    <th>Action</th>
+                </tr>
+                <tr *ngFor="let a of getannualrecords()">
+                    <td style="font-size: 22px;">{{a}}</td>
+                    <td>
+                    <button style="background-color: white;border-radius: 5px;margin: auto;" (click)="click()"><i class="fas fa-pencil-alt" style="color: tomato;"></i>
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button style="background-color: white;border-radius: 5px;margin: auto;"><i class="fas fa-trash-alt" style="color: tomato;"></i>
+                    </button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

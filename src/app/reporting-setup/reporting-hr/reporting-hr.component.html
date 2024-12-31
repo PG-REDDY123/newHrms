@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 style="padding: 20px; color: #0077B5;">Reporting HR  Setup</h2>
+  <form [formGroup]="HrreportingDetailes" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col">
+        <label for="hr">Reporting HR :</label>
+        <input type="text"
+               id="hr"
+               formControlName="hr"
+               placeholder="Enter the Reporting Hr name" />
+        <div *ngIf="hr?.invalid && hr?.touched">
+          <small *ngIf="hr?.errors?.['required']">Please Enter the Name of HR</small>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="submit" type="submit" (click)="additem()">Submit</button>
+      <button class="clear" type="reset">Clear</button>
+    </div>
+  </form>
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <td>S.No</td>
+          <td>Reporting HR</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span></span></td>
+          <td><span>o+</span></td>
+          <td><button type="button"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

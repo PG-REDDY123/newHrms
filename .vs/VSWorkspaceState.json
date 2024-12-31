@@ -3,8 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\hrms-system",
     "\\src\\app\\my-profile-setup",
-    "\\src\\app\\my-profile-setup\\leavetype"
+    "\\src\\app\\my-profile-setup\\blood-group",
+    "\\src\\app\\my-profile-setup\\gender"
   ],
+  "SelectedNode": "\\src\\app\\my-profile-setup\\gender\\GenderComponent.ts",
   "PreviewInSolutionExplorer": false
 }

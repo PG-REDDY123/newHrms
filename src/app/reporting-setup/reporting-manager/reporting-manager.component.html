@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 style="padding: 20px; color: #0077B5;">Reporting Manager Setup</h2>
+  <form [formGroup]="  ManagerDetailes" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col">
+        <label for="manager">Reporting Manager :</label>
+        <input type="text"
+               id="manager"
+               formControlName="manager"
+               placeholder="Enter the Reporting Manager name" />
+        <div *ngIf="manager?.invalid && manager?.touched">
+          <small *ngIf="manager?.errors?.['required']">Please Enter the Manager Name</small>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="submit" type="submit" (click)="additem()">Submit</button>
+      <button class="clear" type="reset">Clear</button>
+    </div>
+  </form>
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <td>S.No</td>
+          <td>Reporting Manager</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span></span></td>
+          <td><span>o+</span></td>
+          <td><button type="button"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

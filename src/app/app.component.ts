@@ -59,13 +59,13 @@ export class AppComponent {
         },
         {
           link_name: "Payroll SetUp",
-          link: "",
+          link: "/Payroolsetup/setsalary",
           icon: "fas fa-dollar-sign",
           Child_sub_menu: [
-            { link_name: "Set Salary", link: "", icon: "fas fa-money-check-alt" },
-            { link_name: "Annual Salary", link: "", icon: "fas fa-calendar-alt" },
-            { link_name: "Earnings Deduction", link: "", icon: "fas fa-calculator" },
-            { link_name: "Payslip", link: "", icon: "fas fa-file-invoice-dollar" }
+            { link_name: "Set Salary", link: "/Payroolsetup/setsalary", icon: "fas fa-money-check-alt" },
+            { link_name: "Annual Salary", link: "/Payroolsetup/Annualsalary", icon: "fas fa-calendar-alt" },
+            { link_name: "Earnings Deduction", link: "/Payroolsetup/Earnings", icon: "fas fa-calculator" },
+            { link_name: "Payslip", link: "/Payroolsetup/Payslips", icon: "fas fa-file-invoice-dollar" }
           ]
         },
         {
@@ -117,15 +117,28 @@ export class AppComponent {
             { link_name: "Blood Group", link: "/profilesetup/blood-group", icon: "fas fa-tint" },
             { link_name: "Department", link: "/profilesetup/Department", icon: "fas fa-building" },
             { link_name: "Role", link: "/profilesetup/role", icon: "fas fa-user-tag" },
-            { link_name: "Leave Type", link: "/profilesetup/leavet", icon: "fas fa-calendar-day" },
-            { link_name: "Reporting Hr", link: "", icon: "fas fa-users" },
-            { link_name: "Reporting Manager", link: "", icon: "fas fa-user-tie" },
+            { link_name: "Leave Type", link: "/profilesetup/leavet", icon: "fas fa-calendar-day" }
+          ],     
+        },
+        {
+          link_name: "Reporting Setup",
+          link: "/reportingsetup/reportinghr",
+          icon: "fas fa-users",
+          Child_sub_menu: [
+            {
+              link_name: "Reporting Hr",
+              link: "/reportingsetup/reportinghr",
+              icon: "fas fa-users"
+            },
+            { link_name: "Reporting Manager", link: "/reportingsetup/reportingmanager", icon: "fas fa-user-tie" },
             { link_name: "Projects", link: "", icon: "fas fa-project-diagram" }
+
           ]
-        }
+        },      
       ],
       Child_sub_menu: []
-    }
+    },
+
   ];
 
 

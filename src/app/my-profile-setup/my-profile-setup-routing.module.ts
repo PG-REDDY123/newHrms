@@ -6,7 +6,7 @@ import { DepartmentComponent } from './department/department.component';
 import { CommonModule } from '@angular/common';
 import { RoleComponent } from './role/role.component';
 import { LeavetypeComponent } from './leavetype/leavetype.component';
-import { GenderComponent } from './gender/gender.component';
+import { GenderComponent } from './gender/GenderComponent';
 
 const routes: Routes = [{
   path: 'profilesetup', component: MyProfileSetupComponent,
