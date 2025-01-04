@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="buttons">
-      <button class="submit" type="submit" (click)="additem()">Submit</button>
+      <button class="submit" type="submit">Submit</button>
       <button class="clear" type="reset">Clear</button>
     </div>
   </form>
@@ -28,10 +28,25 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><span></span></td>
-          <td><span>ll</span></td>
-          <td><button type="button"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        <tr *ngFor="let l of leaves">
+          <td><span>{{l.leaveTypeId}}</span></td>
+          <td>
+            <span *ngIf="l.edit">
+              <input type="text" style="border-radius:0;width:300px;" [(ngModel)]="l.description">
+            </span>
+            <span *ngIf="!l.edit">
+              {{l.description}}</span>
+          </td>
+          <td>
+            <div *ngIf="!l.edit">
+            <button type="button" (click)="openedit(l)"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" (click)="removeitem(l.leaveTypeId)"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button>
+        </div>
+        <div *ngIf="l.edit">
+          <button type="button" (click)="Update(l)"> <i class="fa fa-refresh" style="font-size: 15px; padding: 10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" (click)="close(l)"> <i class="fa fa-window-close" style="font-size:15px;padding:10px;"></i></button>
+        </div>
+        </td>
         </tr>
       </tbody>
     </table>

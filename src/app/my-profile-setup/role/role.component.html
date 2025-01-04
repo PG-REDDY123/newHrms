@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="buttons">
-      <button class="submit" type="submit" (click)="additem()">Submit</button>
+      <button class="submit" type="submit"  >Submit</button>
       <button class="clear" type="reset">Clear</button>
     </div>
   </form>
@@ -28,10 +28,23 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><span></span></td>
-          <td><span>Male</span></td>
-          <td><button type="button"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        <tr *ngFor="let role of roles">
+          <td><span>{{role.roleId}}</span></td>
+          <td>
+            <span *ngIf="role.edit">
+              <input type="text" style="border-radius: 0%;width:300px;" [(ngModel)]="role.description">
+            </span>
+            <span *ngIf="!role.edit">{{role.description}}</span></td>
+          <td>
+            <div *ngIf="!role.edit">
+            <button type="button"  (click)="roleedit(role)"><i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" (click)="removeitem(role.roleId)"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button>
+          </div>
+            <div *ngIf="role.edit">
+              <button type="button" (click)="Update(role)"> <i class="fa fa-refresh" style="font-size: 15px; padding: 10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" (click)="close(role)"> <i class="fa fa-window-close" style="font-size:15px;padding:10px;"></i></button>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>

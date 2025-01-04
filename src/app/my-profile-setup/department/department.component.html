@@ -6,6 +6,7 @@
         <label for="Department">Deparement :</label>
         <input type="text"
                id="Department"
+               [(ngModel)]="DepartmentDescription"
                formControlName="Department"
                placeholder="Enter the Department" />
         <div *ngIf="Department?.invalid && Department?.touched">
@@ -28,10 +29,21 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><span></span></td>
-          <td><span>DD</span></td>
-          <td><button type="button"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        <tr *ngFor="let dep of departments">
+          <td><span>{{dep.jobId}}</span></td>
+          <td>
+            <span *ngIf="dep.edit"><input type="text" style="border-radius: 0;" [(ngModel)]="dep.description" /></span>
+            <span *ngIf="!dep.edit">{{dep.description}}</span></td>
+          <td>
+            <div *ngIf="!dep.edit">
+            <button type="button" (click)="departmentedit(dep)"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" (click)=" removeitem(dep.jobId)"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button>
+          </div>
+          <div *ngIf="dep.edit">
+            <button type="button" (click)="Update(dep)"> <i class="fa fa-refresh" style="font-size: 15px; padding: 10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" (click)="close(dep)"> <i class="fa fa-window-close" style="font-size:15px;padding:10px;"></i></button>
+          </div>
+          </td>
         </tr>
       </tbody>
     </table>

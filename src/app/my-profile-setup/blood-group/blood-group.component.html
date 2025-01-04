@@ -7,6 +7,7 @@
         <input type="text"
                id="blood"
                formControlName="blood"
+               [(ngModel)]="  groupdescription"
                placeholder="Enter the blood" />
         <div *ngIf="blood?.invalid && blood?.touched">
           <small *ngIf="blood?.errors?.['required']">Please Enter the bloodGroup</small>
@@ -14,7 +15,7 @@
       </div>
     </div>
     <div class="buttons">
-      <button class="submit" type="submit" (click)="additem()">Submit</button>
+      <button class="submit" type="submit" [disabled]="bloodDetailes.invalid">Submit</button>
       <button class="clear" type="reset">Clear</button>
     </div>
   </form>
@@ -28,10 +29,24 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><span></span></td>
-          <td><span>o+</span></td>
-          <td><button type="button"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button></td>
+        <tr *ngFor="let bg of  bloodgroup">
+          <td><span>{{bg.bloodGroupId}}</span></td>
+          <td>
+          <span *ngIf="bg.edit">
+            <input style="width: auto;border-radius:0" type="text" [(ngModel)]="bg.description" />
+          </span>
+          <span *ngIf="!bg.edit">{{bg.description}}</span>
+          </td>
+          <td>
+            <div *ngIf="!bg.edit">
+              <button type="button" (click)="groupedit(bg)"> <i class="fa fa-edit" style="font-size:15px;padding:10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" (click)=" removeitem(bg.bloodGroupId)"> <i class="fa fa-trash" style="font-size:15px;padding:10px;"></i></button>
+            </div>
+            <div *ngIf="bg.edit">
+              <button type="button" (click)="Update(bg)"> <i class="fa fa-refresh" style="font-size: 15px; padding: 10px;"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" (click)="close(bg)"> <i class="fa fa-window-close" style="font-size:15px;padding:10px;"></i></button>
+            </div>
+            </td>
         </tr>
       </tbody>
     </table>
