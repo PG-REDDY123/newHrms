@@ -27,7 +27,7 @@
                 <h3>Hi user</h3>
               </div>
               <hr />
-              <a href="#" class="profile-options" *ngFor="let p of profile;">
+              <a href="#" class="profile-options" *ngFor="let p of profile;"  (click)="onMenuItemClick(p.action)">
                 <i [class]="p.icon"></i>
                 <p>{{p.name}}</p>
                 <i class="fas fa-greater-than"></i>

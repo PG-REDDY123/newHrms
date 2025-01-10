@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="Loginform" (ngSubmit)="onsubmit()">
+            <h2>Login Page</h2>
+            <br>
+            <br>
+            <label for="Username">UserName:</label>
+            <input type="text"
+                   id="UserName"
+                   formControlName="Username"
+                   placeholder="Enter your UserName"
+            />
+            <br>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input id="password" 
+                    formControlName="password"
+                    type="password"
+                    placeholder=" Enter your Password"        
+            />
+            <br>
+            <br>
+            <label for="Role">Role:</label>
+            <input type="text"
+                   id="Role"
+                   formControlName="Role"
+                   placeholder="Enter your Role"
+            />
+            <br>
+            <div class="btn">
+                <button type="submit" [disabled]="Loginform.invalid">Login</button>
+            </div>
+            <div *ngIf="errorMessage" class="alert alert-danger mt-2">
+                {{errorMessage}}
+            </div>
+
+        </form>
+    </div>
+    
+</div>

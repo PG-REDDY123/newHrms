@@ -1,4 +1,5 @@
 <div class="container">
+  <div *ngIf="isLoggedIn; else loginTemplate">
   <div class="sidebar">
     <div class="logo">
       <img style="background-color:aliceblue;padding:5px;border-radius:5px;" src="Skywaves-logo.webp" alt="cmplogo" />
@@ -7,14 +8,14 @@
     </div>
     <ul class="sidebar-links">
       <li *ngFor="let i of Mainsidebar;let k = index;" #list>
-        <div *ngIf="i.sub_menu.length == 0 && i.Child_sub_menu.length == 0" class="submenu-list">
+        <div *ngIf=" hasPermission(i) && i.sub_menu.length == 0 && i.Child_sub_menu.length == 0" class="submenu-list">
           <a [routerLink]="[i.link]" (click)="i.action && i.action()" [routerLinkActive]="['active-link']" [routerLinkActiveOptions]="{exact: false}">
             <i [class]="i.icon"></i>
             <span class="link_name">{{i.link_name}}</span>
           </a>
         </div>
 
-        <div *ngIf="i.sub_menu.length > 0" class="submenu-list" (click)="submenu(list)"
+        <div *ngIf=" hasPermission(i) && i.sub_menu.length > 0" class="submenu-list" (click)="submenu(list)"
              [routerLink]="[i.link]"
              [routerLinkActive]="['active-link']"
              [routerLinkActiveOptions]="{exact: false}">
@@ -26,14 +27,14 @@
         </div>
         <ul class="sub_menu">
           <li *ngFor="let sub of i.sub_menu" #menu>
-            <div *ngIf="sub.Child_sub_menu && sub.Child_sub_menu.length == 0" class="submenu-list">
+            <div *ngIf=" hasPermission(sub) && sub.Child_sub_menu && sub.Child_sub_menu.length == 0" class="submenu-list">
               <a [routerLink]="[sub.link]">
                 <i [class]="sub.icon"></i>
                 <span class="link_name">{{sub.link_name}}</span>
               </a>
             </div>
 
-            <div *ngIf="sub.Child_sub_menu && sub.Child_sub_menu.length > 0" class="submenu-list" (click)="childsubmenu(menu)"
+            <div *ngIf=" hasPermission(sub) && sub.Child_sub_menu && sub.Child_sub_menu.length > 0" class="submenu-list" (click)="childsubmenu(menu)"
                  [routerLink]="[sub.link]"
                  [routerLinkActive]="['active-link']"
                  [routerLinkActiveOptions]="{exact: false}">
@@ -71,4 +72,10 @@
       <router-outlet></router-outlet>
     </div>
   </div>
+</div>
+
+<!--login page-->
+<ng-template #loginTemplate>
+  <app-login (loginSuccess)="onLoginSuccess()"></app-login>
+</ng-template>
 </div>

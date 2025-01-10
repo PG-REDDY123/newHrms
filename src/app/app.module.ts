@@ -16,7 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { MyProfileSetupComponent } from './my-profile-setup/my-profile-setup.component';
 import { MyProfileSetupRoutingModule } from './my-profile-setup/my-profile-setup-routing.module';
 import { RoleComponent } from './my-profile-setup/role/role.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { GenderComponent } from './my-profile-setup/gender/GenderComponent';
 import { DepartmentComponent } from './my-profile-setup/department/department.component';
@@ -41,6 +41,9 @@ import { GoaltrackingComponent } from './hrms-system/performancesetup/goaltracki
 import { ReportingSetupComponent } from './reporting-setup/reporting-setup.component';
 import { ReportingHrComponent } from './reporting-setup/reporting-hr/reporting-hr.component';
 import { ReportingManagerComponent } from './reporting-setup/reporting-manager/reporting-manager.component';
+import { LoginComponent } from './login/login.component';
+import { AuthserviceService } from './authservice.service';
+import { httpinterceptorInterceptor } from './httpinterceptor.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,7 +81,8 @@ import { ReportingManagerComponent } from './reporting-setup/reporting-manager/r
      GoaltrackingComponent,
      ReportingSetupComponent,
     ReportingHrComponent,
-     ReportingManagerComponent
+     ReportingManagerComponent,
+     LoginComponent
    
   ],
   imports: [
@@ -92,7 +96,13 @@ import { ReportingManagerComponent } from './reporting-setup/reporting-manager/r
     CommonModule,
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: httpinterceptorInterceptor, // Use factory for HttpInterceptorFn
+      multi: true, // Ensures the interceptor is added to the chain without overwriting others
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

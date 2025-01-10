@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './employeesetup.component.css'
 })
 export class EmployeesetupComponent {
-
+     setuplist=[
+      {
+        link:"/Employee/list",
+        link_name:"Employee List"
+      }
+     ]
 }

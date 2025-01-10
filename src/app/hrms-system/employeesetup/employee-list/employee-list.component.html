@@ -1,1 +1,31 @@
-<p>employee-list works!</p>
+<div class="container">
+    <div class="add">
+        <button>Add </button>
+    </div>
+    <div class="row">
+        <div class="col-3" *ngFor="let emp of empinfo">
+           <div class="head-part">
+           <h3>{{emp.Role}}</h3>
+           </div>
+           <hr>
+           <hr>
+           <div class="body-part">
+            <div class="image">
+            <img src="https://cdn-icons-png.flaticon.com/512/1869/1869679.png" alt="Employee image" >
+            </div>
+            <hr>
+            <hr>
+            <div class="detailes">
+                <h4>Name:{{emp.Name}}</h4>
+                <h4>Emp ID:{{emp.Emp_ID}}</h4>
+                <h4>DOB:{{emp.DOB}}</h4>
+            </div>
+           </div>
+           <hr>
+           <hr>
+           <div class="info">
+           <button>View More</button>
+           </div>
+        </div>
+    </div>
+</div>

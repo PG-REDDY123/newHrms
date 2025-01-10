@@ -19,6 +19,15 @@ export interface RoleDTO{
 export interface LeaveDTO{
   Description:string;
 }
+
+//jwt token
+export interface User{
+  userName:string;
+  password:string;
+  role:string;
+}
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -112,5 +121,16 @@ export class SetupService {
   deleteleave(id:number){
     return this.http.put(`${this.url}Leave/${id}`,null);
   }
+
+
+  //jwt token authentication
+  private jwturl = 'http://localhost:5224/api/Auth';
+
+  login(credintials:User):Observable<any>{
+    return this.http.post(this.jwturl,credintials);
+  }
+
+  
+
 }
 

@@ -1,0 +1,60 @@
+.container{
+ margin:10px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col-3{
+  border:1px solid black;
+  padding:5px;
+  border-radius:20px;
+  margin:24px;
+
+}
+.head-part{
+  padding:5px;
+  margin:5px;
+}
+.body-part{
+  padding:2px;
+  margin:5px;
+  width:300px;
+}
+
+img{
+  width:150px;
+  border-radius: 60px;
+
+}
+.image{
+  display: flex;
+  justify-content: center;
+  margin:5px;
+}
+.detailes{
+  margin:2px;
+  padding:4px;
+}
+h3{
+  padding:2px;
+}
+.info{
+  margin:5px;
+  justify-content: center;
+  display: flex;
+  padding:5px;
+}
+button{
+  width:100px;
+  height:45px;
+  background-color: blue;
+  color:white;
+  border-radius:20px;
+}
+.add{
+  padding:5px;
+  justify-content: end;
+  display: flex;
+}

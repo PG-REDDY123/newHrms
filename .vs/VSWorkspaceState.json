@@ -3,12 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\hrms-system",
+    "\\src\\app\\login",
     "\\src\\app\\my-profile-setup",
-    "\\src\\app\\my-profile-setup\\blood-group",
     "\\src\\app\\my-profile-setup\\department",
-    "\\src\\app\\my-profile-setup\\gender"
+    "\\src\\app\\myprofile"
   ],
-  "SelectedNode": "\\src\\app\\my-profile-setup\\department\\department.component.ts",
+  "SelectedNode": "\\src\\app\\my-profile-setup\\setup.service.ts",
   "PreviewInSolutionExplorer": false
 }

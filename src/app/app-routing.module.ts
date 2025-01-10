@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MyprofileComponent } from './myprofile/myprofile.component';
 import { MyProfileSetupComponent } from './my-profile-setup/my-profile-setup.component';
@@ -10,9 +10,14 @@ import { SetsalaryComponent } from './hrms-system/payroolsetup/setsalary/setsala
 import { AnnualsalaryComponent } from './hrms-system/payroolsetup/annualsalary/annualsalary.component';
 import { EarningsdeductionsComponent } from './hrms-system/payroolsetup/earningsdeductions/earningsdeductions.component';
 import { PayslipsComponent } from './hrms-system/payroolsetup/payslips/payslips.component';
+import { EmployeesetupComponent } from './hrms-system/employeesetup/employeesetup.component';
+import { EmployeeListComponent } from './hrms-system/employeesetup/employee-list/employee-list.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
+  {path:'',component:LoginComponent,pathMatch:'full'},
+  {path:'login',component:LoginComponent },
   { path: "myprofile", component: MyprofileComponent },
  /* { path: 'my-profie-setup', loadChildren: () => import('./my-profile-setup/my-profile-setup.module').then(m => m.MyProfileSetupModule) }*/
   { path: "profilesetup", component: MyProfileSetupComponent },
@@ -31,7 +36,12 @@ const routes: Routes = [
       {path:"Earnings",component:EarningsdeductionsComponent},
       {path:"Payslips",component:PayslipsComponent}
     ]
-  }
+  },
+  { path:'Employee',component:EmployeesetupComponent,
+    children:[
+      {path:"list",component:EmployeeListComponent}
+    ]
+   }
 ];
 
 @NgModule({

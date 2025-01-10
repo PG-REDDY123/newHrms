@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\department\\department.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\my-profile-setup\\department\\department.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\blood-group\\blood-group.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\my-profile-setup\\blood-group\\blood-group.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\httpinterceptor.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\httpinterceptor.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\blood-group\\blood-group.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\my-profile-setup\\blood-group\\blood-group.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\gender\\gender.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\my-profile-setup\\gender\\gender.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\gender\\GenderComponent.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\my-profile-setup\\gender\\GenderComponent.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\setup.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\my-profile-setup\\setup.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\authservice.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\authservice.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\department\\department.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\my-profile-setup\\department\\department.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,60 +82,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "department.component.ts",
-              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\department\\department.component.ts",
-              "RelativeDocumentMoniker": "src\\app\\my-profile-setup\\department\\department.component.ts",
-              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\department\\department.component.ts",
-              "RelativeToolTip": "src\\app\\my-profile-setup\\department\\department.component.ts",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAcwHIAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-01-03T05:24:08.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "blood-group.component.html",
-              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\blood-group\\blood-group.component.html",
-              "RelativeDocumentMoniker": "src\\app\\my-profile-setup\\blood-group\\blood-group.component.html",
-              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\blood-group\\blood-group.component.html",
-              "RelativeToolTip": "src\\app\\my-profile-setup\\blood-group\\blood-group.component.html",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-02T03:44:24.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "blood-group.component.ts",
-              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\blood-group\\blood-group.component.ts",
-              "RelativeDocumentMoniker": "src\\app\\my-profile-setup\\blood-group\\blood-group.component.ts",
-              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\blood-group\\blood-group.component.ts",
-              "RelativeToolTip": "src\\app\\my-profile-setup\\blood-group\\blood-group.component.ts",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAYwGUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-01-02T03:44:04.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "setup.service.ts",
               "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\setup.service.ts",
               "RelativeDocumentMoniker": "src\\app\\my-profile-setup\\setup.service.ts",
               "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\setup.service.ts",
               "RelativeToolTip": "src\\app\\my-profile-setup\\setup.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-08T08:20:24.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "httpinterceptor.interceptor.ts",
+              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\httpinterceptor.interceptor.ts",
+              "RelativeDocumentMoniker": "src\\app\\httpinterceptor.interceptor.ts",
+              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\httpinterceptor.interceptor.ts",
+              "RelativeToolTip": "src\\app\\httpinterceptor.interceptor.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-08T07:48:40.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\app.module.ts",
+              "RelativeToolTip": "src\\app\\app.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-08T07:51:43.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "authservice.service.ts",
+              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\authservice.service.ts",
+              "RelativeDocumentMoniker": "src\\app\\authservice.service.ts",
+              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\authservice.service.ts",
+              "RelativeToolTip": "src\\app\\authservice.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-08T07:54:23.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.component.ts",
+              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\login\\login.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\login\\login.component.ts",
+              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\login\\login.component.ts",
+              "RelativeToolTip": "src\\app\\login\\login.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-01-08T07:34:33.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "department.component.ts",
+              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\department\\department.component.ts",
+              "RelativeDocumentMoniker": "src\\app\\my-profile-setup\\department\\department.component.ts",
+              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\department\\department.component.ts",
+              "RelativeToolTip": "src\\app\\my-profile-setup\\department\\department.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-01-02T04:02:21.396Z"
+              "WhenOpened": "2025-01-08T07:36:39.558Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.component.html",
+              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\login\\login.component.html",
+              "RelativeDocumentMoniker": "src\\app\\login\\login.component.html",
+              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\login\\login.component.html",
+              "RelativeToolTip": "src\\app\\login\\login.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-08T07:34:25.36Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -140,31 +190,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "gender.component.html",
-              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\gender\\gender.component.html",
-              "RelativeDocumentMoniker": "src\\app\\my-profile-setup\\gender\\gender.component.html",
-              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\gender\\gender.component.html",
-              "RelativeToolTip": "src\\app\\my-profile-setup\\gender\\gender.component.html",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwDYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-02T03:45:12.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GenderComponent.ts",
-              "DocumentMoniker": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\gender\\GenderComponent.ts",
-              "RelativeDocumentMoniker": "src\\app\\my-profile-setup\\gender\\GenderComponent.ts",
-              "ToolTip": "C:\\Users\\govardhan\\Documents\\AngularProjects\\Project_Hrms\\src\\app\\my-profile-setup\\gender\\GenderComponent.ts",
-              "RelativeToolTip": "src\\app\\my-profile-setup\\gender\\GenderComponent.ts",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAYwF0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-20T06:34:58.987Z"
             }
           ]
         }

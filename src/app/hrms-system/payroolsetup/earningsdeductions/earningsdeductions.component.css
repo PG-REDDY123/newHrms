@@ -1,14 +1,11 @@
 .container{
     display:flex;
     margin:20px;
-    border:1px solid black;
     padding:20px;
     width:95%;
 }
 .row{
-   
     padding: 10px;
-    border:1px solid black;
     overflow-x: auto;
     width:100%;
 }
